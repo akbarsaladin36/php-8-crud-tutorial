@@ -16,7 +16,7 @@
 
         <?php require_once("./controllers/create.php"); ?>
 
-     <form action="#" method="post" class="mt-5">
+     <form action="" method="post" class="mt-5">
          <div class="form-group mt-3">
              <label for="username">Username</label>
              <input type="text" name="username" placeholder="Enter a username" class="form-control">
