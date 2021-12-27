@@ -18,7 +18,7 @@ This is a tutorial about creating a simple application using CRUD method with PH
 ## How to run the app ?
 
 1. Open app's directory in CMD or Terminal
-2. Type `php -S localhost:8000`
+2. Type `php -S localhost:8000` to activate server
 
 ## Feature
 
