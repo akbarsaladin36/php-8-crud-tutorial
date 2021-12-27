@@ -8,6 +8,8 @@ require_once './config/db.php';
     $hasil = $result->fetchAll();
     $no = 1;
 
+    require_once './controllers/delete.php';
+
     foreach($hasil as $row) {
         echo "<tr>";
         echo "<td>".$no."</td>";
@@ -16,7 +18,7 @@ require_once './config/db.php';
         echo "<td>".$row['user_address']."</td>";
         echo "<td>";
         echo "<a href='/edit-page.php?id=".$row["user_id"]."' class='btn btn-success'>Update</a>";
-        echo "<a href='/delete?id=".$row["user_id"]."' class='btn btn-danger ms-3'>Delete</a>";
+        echo "<a href='/index.php?hapus=".$row["user_id"]."' class='btn btn-danger ms-3'>Delete</a>";
         echo "</td>";
         echo "</tr>";
         $no++;
