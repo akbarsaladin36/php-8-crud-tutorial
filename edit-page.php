@@ -14,28 +14,9 @@
     <div class="container">
         <h1 class="mt-5 text-center">UPDATE DATA</h1>
 
-     <form action="#" method="post" class="mt-5">
-         <div class="form-group mt-3">
-             <label for="username">Username</label>
-             <input type="text" name="username" placeholder="Enter a username" class="form-control">
-         </div>
-         <div class="form-group mt-3">
-             <label for="email">Email</label>
-             <input type="email" name="email" placeholder="Enter an email" class="form-control">
-         </div>
-         <div class="form-group mt-3">
-             <label for="password">Password</label>
-             <input type="password" name="password" placeholder="Enter a password" class="form-control">
-         </div>
-         <div class="form-group mt-3">
-             <label for="address">Address</label>
-             <input type="text" name="address" placeholder="Enter an address" class="form-control">
-         </div>
-         <button type="submit" class="btn btn-primary form-control mt-3">UPDATE</button>
-     </form>
+        <?php require_once './controllers/update.php'; ?>
 
-     <a href="/index.php" class="btn btn-secondary form-control mt-3">Back</a>
-
+        <?php require_once './controllers/readById.php'; ?>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
